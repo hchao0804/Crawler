@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
-import tesserocr
+import tesserocr  # 安装完tesseract后，添加TESSDATA_PREFIX环境变量
 from PIL import Image
 
 chrome_options = Options()
