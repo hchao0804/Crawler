@@ -15,5 +15,5 @@ print(soup.p.string)
 
 print(tesserocr.tesseract_version())
 print(tesserocr.get_languages())
-image = Image.open("Untitled.png")  # 下载新的tessdata package 代替自带的tessdata
+image = Image.open("image.png")  # 下载新的tessdata package 代替自带的tessdata
 print(tesserocr.image_to_text(image))
