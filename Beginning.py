@@ -9,3 +9,6 @@ print(browser.current_url)
 
 soup = BeautifulSoup("<p>Hello</p>","lxml")
 print(soup.p.string)
+
+with open("C:/Users/v-chah/Desktop/results.txt") as f:
+     print(f.read())
