@@ -12,4 +12,4 @@ print(type(response.text))
 
 print(response.json())
 print(type(response.json()))
-print(response.json()['url'])
+print(response.json()['url']) #
