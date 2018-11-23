@@ -14,7 +14,9 @@ headers = {
 # print(type(response.json()))
 # print(response.json()['url'])
 
-form ={"name": 'Han', 'age': '23'}
-r = requests.post("http://httpbin.org/post", form)
+form = {"name": 'Han', 'age': '23'}
+
+image = {'file': open('image.png', 'rb')}
+r = requests.post("http://httpbin.org/post", files=image)
 print(r.text)
 
