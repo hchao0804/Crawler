@@ -17,3 +17,15 @@ print(tesserocr.tesseract_version())
 print(tesserocr.get_languages())
 image = Image.open("image.png")  # 下载新的tessdata package 代替自带的tessdata
 print(tesserocr.image_to_text(image, lang = 'eng'))
+
+from flask import Flask
+app = Flask(__name__)
+
+
+@app.route("/")
+def hello():
+    return "Hello World!"
+
+
+if __name__ == "__main__":
+    app.run()
